@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
+    "moduleResolution": "node",
     "paths": {
       "$components": ["./src/.vitepress/components"],
       "$components/*": ["./src/.vitepress/components/*"],

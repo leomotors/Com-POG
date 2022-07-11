@@ -25,12 +25,11 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/Leomotors/cocoa-discord-utils",
+        link: "https://github.com/Leomotors/Com-POG",
       },
     ],
     editLink: {
-      pattern:
-        "https://github.com/Leomotors/cocoa-discord-utils/edit/main/docs/:path",
+      pattern: "https://github.com/Leomotors/Com-POG/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
 
@@ -38,7 +37,16 @@ export default defineConfig({
       {
         collapsible: true,
         text: "Introduction",
-        items: [{ text: "Intro", link: "/introduction/" }],
+        items: [
+          {
+            text: "Intro",
+            link: "/introduction/",
+          },
+          {
+            text: "Contribution Guide",
+            link: "/contributing",
+          },
+        ],
       },
       {
         collapsible: true,
@@ -46,11 +54,11 @@ export default defineConfig({
         items: [
           {
             text: "Overview",
-            link: "/introduction/overview",
+            link: "/introduction/",
           },
           {
             text: "Python ๖๙๖๙",
-            link: "/introduction/overview",
+            link: "/introduction/",
           },
         ],
       },
@@ -60,16 +68,20 @@ export default defineConfig({
         items: [
           {
             text: "Overview",
-            link: "/introduction/overview",
+            link: "/introduction/",
           },
           {
             text: "0001",
             link: "/solutions/0001",
+          },
+          {
+            text: "0002",
+            link: "/solutions/0002",
           },
         ],
       },
     ],
   },
 
-  outDir: "../docs-dist",
+  outDir: "../dist",
 });

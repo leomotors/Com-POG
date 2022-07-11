@@ -1,15 +1,13 @@
 import DefaultTheme from "vitepress/theme";
 
-import Home from "$components/Home.vue";
-import Spoiler from "$components/Spoiler.vue";
-
-import S0001 from "$spoilers/0001.md";
-
 import "./styles.css";
 import "katex/dist/katex.min.css";
 
+import Enhancer from "./enhancer.g";
+
 export default {
   ...DefaultTheme,
+  ...Enhancer,
   Layout() {
     return (
       <DefaultTheme.Layout>
@@ -18,9 +16,5 @@ export default {
         }}
       </DefaultTheme.Layout>
     );
-  },
-  enhanceApp: ({ app }) => {
-    app.component("Spoiler", Spoiler);
-    app.component("S0001", S0001);
   },
 };

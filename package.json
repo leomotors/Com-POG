@@ -1,12 +1,11 @@
 {
-  "name": "com-prog-sol",
+  "name": "com-pog",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "dev": "vitepress dev src",
-    "build": "vitepress build src && typedoc && touch dist/.nojekyll"
+    "build": "vitepress build src && touch dist/.nojekyll",
+    "gen": "node scripts"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

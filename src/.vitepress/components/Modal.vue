@@ -9,7 +9,7 @@ defineProps<{ showModal: boolean; onClickOutside: () => void }>();
     @click="onClickOutside"
   >
     <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-700 shadow-xl"
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-100 dark:bg-slate-700 shadow-xl"
       @click.stop
     >
       <slot />
