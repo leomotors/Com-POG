@@ -1,6 +1,9 @@
 ---
 layout: home
 
+title: COM POG
+titleTemplate: เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา
+
 hero:
   name: COM POG
   text: คลังสมบัติของชาติ
@@ -12,6 +15,9 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/Leomotors/cocoa-discord-utils
+    - theme: alt
+      text: Contributing
+      link: /contributing
 
 features:
   - title: อะไรคือวิชา Com Prog

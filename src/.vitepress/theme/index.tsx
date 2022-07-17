@@ -1,11 +1,14 @@
+import { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 
 import "./styles.css";
 import "katex/dist/katex.min.css";
 
+import Home from "$components/Home.vue";
+
 import Enhancer from "./enhancer.g";
 
-export default {
+const config: Theme = {
   ...DefaultTheme,
   ...Enhancer,
   Layout() {
@@ -18,3 +21,5 @@ export default {
     );
   },
 };
+
+export default config;

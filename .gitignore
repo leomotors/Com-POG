@@ -109,3 +109,7 @@ dist
 # Output
 docs-dist
 typedoc-out
+
+# yarn
+cache
+install-state.gz

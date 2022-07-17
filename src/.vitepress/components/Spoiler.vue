@@ -13,7 +13,7 @@ function clickOutside() {
 <template>
   <div
     @click="showModal = 1"
-    class="p-2 cursor-pointer w-fit rounded-xl border border-red-500 hover:border-red-400 transition-all"
+    class="p-2 cursor-pointer w-fit rounded-xl border-2 bg-pink-900 border-red-500 hover:border-red-400 transition-all"
   >
     กดเพื่อดูเฉลย
   </div>
@@ -28,15 +28,15 @@ function clickOutside() {
       <div class="flex justify-evenly">
         <div
           @click="clickOutside"
-          class="border border-black p-2 rounded-xl cursor-pointer w-fit"
+          class="border border-black bg-slate-900 text-white p-2 rounded-xl cursor-pointer w-fit"
         >
           ยกเลิก
         </div>
         <div
           @click="showModal = 2"
-          class="p-2 rounded-xl border border-red-500 cursor-pointer w-fit"
+          class="p-2 rounded-xl border border-red-500 bg-pink-900 text-white cursor-pointer w-fit"
         >
-          กดเพื่อดูเฉลยจริง ๆ
+          ยืนยัน
         </div>
       </div>
     </div>

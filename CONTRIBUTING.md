@@ -1,3 +1,3 @@
-# Contributing Guide & Guideline
+# Contributing Guideline
 
 todo

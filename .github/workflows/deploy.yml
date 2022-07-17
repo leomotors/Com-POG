@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docs:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Yarn Cache
+        uses: c-hive/gha-yarn-cache@v2
+
+      - name: Install Dependencies (Yarn)
+        run: yarn install
+
+      - name: Build the App
+        run: yarn build
+
+      - name: Deploy documentation
+        uses: JamesIves/github-pages-deploy-action@v4.3.4
+        with:
+          folder: dist

@@ -3,8 +3,9 @@ import katexConfig from "./katex";
 
 export default defineConfig({
   ...katexConfig,
+
   title: "COM POG",
-  description: "เฉลยให้พวกชาติหมา",
+  description: "เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา",
   lastUpdated: true,
 
   head: [
@@ -29,8 +30,8 @@ export default defineConfig({
       },
     ],
     editLink: {
-      pattern: "https://github.com/Leomotors/Com-POG/edit/main/docs/:path",
-      text: "Edit this page on GitHub",
+      pattern: "https://github.com/Leomotors/Com-POG/edit/main/src/:path",
+      text: "Edit or suggest changes to this page",
     },
 
     sidebar: [
@@ -54,11 +55,7 @@ export default defineConfig({
         items: [
           {
             text: "Overview",
-            link: "/introduction/",
-          },
-          {
-            text: "Python ๖๙๖๙",
-            link: "/introduction/",
+            link: "/learn/",
           },
         ],
       },
