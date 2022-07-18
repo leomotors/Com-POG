@@ -1,14 +1,13 @@
 {
   "name": "com-pog",
-  "version": "1.0.0",
-  "license": "MIT",
+  "version": "0.0.0",
   "scripts": {
     "dev": "vitepress dev src --port=3182",
     "build": "yarn gen && vitepress build src && touch dist/.nojekyll",
     "gen": "node scripts"
   },
   "devDependencies": {
-    "@types/node": "^18.0.5",
+    "@types/node": "^18.0.6",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.20.0",

@@ -19,10 +19,10 @@ jobs:
       - name: Install Dependencies (Yarn)
         run: yarn install
 
-      - name: Build the App
+      - name: Build the Web
         run: yarn build
 
-      - name: Deploy documentation
+      - name: Deploy Web to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
           folder: dist
