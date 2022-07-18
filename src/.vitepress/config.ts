@@ -31,7 +31,7 @@ export default defineConfig({
     ],
     editLink: {
       pattern: "https://github.com/Leomotors/Com-POG/edit/main/src/:path",
-      text: "Edit or suggest changes to this page",
+      text: "Suggest or contribute changes to this page",
     },
 
     sidebar: [
