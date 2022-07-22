@@ -1,5 +1,7 @@
+// @ts-check
+
 /** @type {import("tailwindcss").Config} */
-module.exports = {
+const config = {
   content: ["./src/.vitepress/**/*.{js,ts,tsx,vue,css}"],
   darkMode: "class",
   theme: {
@@ -7,3 +9,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+module.exports = config;

@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "baseUrl": ".",
     "paths": {
       "$components": ["./src/.vitepress/components"],
       "$components/*": ["./src/.vitepress/components/*"],
       "$spoilers": ["./src/.vitepress/spoilers"],
       "$spoilers/*": ["./src/.vitepress/spoilers/*"]
     }
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

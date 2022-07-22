@@ -1,10 +1,13 @@
+/** @jsx h */
+import { h } from "vue";
+
 import { Theme, useRouter } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 
 import "./styles.css";
 import "katex/dist/katex.min.css";
 
-import Home from "$components/Home.vue";
+import Home from "$components/Home";
 
 import Enhancer from "./enhancer.g";
 
@@ -13,9 +16,10 @@ const config: Theme = {
   ...Enhancer,
   Layout() {
     return (
+      // @ts-ignore
       <DefaultTheme.Layout>
         {{
-          "home-features-after": () => <Home />,
+          "home-features-after": () => <Home contributors={["Kob", "Chang"]} />,
         }}
       </DefaultTheme.Layout>
     );
@@ -30,9 +34,7 @@ const config: Theme = {
         <p class="text-2xl sm:text-3xl font-bold">ไม่พบหน้านี้</p>
 
         <p>ไม่พบโจทย์ที่ต้องการใช่มั้ย ไม่ลองมาเขียนเฉลยเองดูบ้างล่ะ</p>
-        <a href="/contributing">
-          <button>View Contributing Guide</button>
-        </a>
+        <a href="/contributing">View Contributing Guide</a>
       </div>
     );
   },

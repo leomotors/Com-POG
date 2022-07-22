@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import Modal from "$components/Modal.vue";
-
 let showModal = ref<0 | 1 | 2>(0);
 
 function clickOutside() {
