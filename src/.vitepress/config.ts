@@ -4,7 +4,8 @@ import katexConfig from "./katex";
 export default defineConfig({
   ...katexConfig,
 
-  title: "COM POG",
+  title: "COM POG (Closed Preview)",
+  titleTemplate: "COM POG",
   description: "เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา",
   lastUpdated: true,
 
@@ -63,10 +64,6 @@ export default defineConfig({
         collapsible: true,
         text: "Solutions",
         items: [
-          {
-            text: "Overview",
-            link: "/introduction/",
-          },
           {
             text: "0001",
             link: "/solutions/0001",

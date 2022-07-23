@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-let showModal = ref<0 | 1 | 2>(0);
+import Modal from "$components/Modal";
+
+const showModal = ref<0 | 1 | 2>(0);
 
 function clickOutside() {
   showModal.value = 0;
@@ -11,14 +13,14 @@ function clickOutside() {
 <template>
   <div
     @click="showModal = 1"
-    class="p-2 cursor-pointer w-fit rounded-xl border-2 bg-pink-900 border-red-500 hover:border-red-400 transition-all"
+    class="w-fit cursor-pointer rounded-xl border-2 border-red-500 bg-pink-900 p-2 transition-all hover:border-red-400"
   >
     กดเพื่อดูเฉลย
   </div>
 
   <Modal :showModal="showModal == 1" :onClickOutside="clickOutside">
-    <div class="w-[50vw] h-full p-4 mx-auto">
-      <p class="text-center font-bold text-3xl">
+    <div class="mx-auto h-full w-[50vw] p-4">
+      <p class="text-center text-3xl font-bold">
         คุณแน่ใจหรือไม่ว่าต้องการดูเฉลย
       </p>
       <p class="text-center">ของฝากนักกอล์ฟ</p>
@@ -26,13 +28,13 @@ function clickOutside() {
       <div class="flex justify-evenly">
         <div
           @click="clickOutside"
-          class="border border-black bg-slate-900 text-white p-2 rounded-xl cursor-pointer w-fit"
+          class="w-fit cursor-pointer rounded-xl border border-black bg-slate-900 p-2 text-white"
         >
           ยกเลิก
         </div>
         <div
           @click="showModal = 2"
-          class="p-2 rounded-xl border border-red-500 bg-pink-900 text-white cursor-pointer w-fit"
+          class="w-fit cursor-pointer rounded-xl border border-red-500 bg-pink-900 p-2 text-white"
         >
           ยืนยัน
         </div>
@@ -41,10 +43,10 @@ function clickOutside() {
   </Modal>
 
   <Modal :showModal="showModal == 2" :onClickOutside="clickOutside">
-    <div class="flex flex-col w-[50vw] h-full max-h-[98vh] p-4">
-      <p class="text-center font-bold text-4xl">เฉลย</p>
+    <div class="flex h-full max-h-[98vh] w-[50vw] flex-col p-4">
+      <p class="text-center text-4xl font-bold">เฉลย</p>
 
-      <div class="overflow-y-auto flex-1">
+      <div class="flex-1 overflow-y-auto">
         <slot />
       </div>
     </div>

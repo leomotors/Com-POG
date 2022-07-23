@@ -1,12 +1,11 @@
-/** @jsx h */
-import { FunctionalComponent, h } from "vue";
+import { FunctionalComponent } from "vue";
 
 interface ModalProps {
   showModal: boolean;
   onClickOutside: () => void;
 }
 
-const MyModal: FunctionalComponent<ModalProps> = (
+const Modal: FunctionalComponent<ModalProps> = (
   { showModal, onClickOutside },
   { slots }
 ) => {
@@ -17,7 +16,7 @@ const MyModal: FunctionalComponent<ModalProps> = (
         onClick={onClickOutside}
       >
         <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-100 dark:bg-slate-700 shadow-xl"
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-slate-100 shadow-xl dark:bg-slate-700"
           onClick={(e) => e.stopPropagation()}
         >
           {slots.default?.()}
@@ -29,4 +28,4 @@ const MyModal: FunctionalComponent<ModalProps> = (
   }
 };
 
-export default MyModal;
+export default Modal;

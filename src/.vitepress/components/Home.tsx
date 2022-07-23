@@ -1,5 +1,4 @@
-/** @jsx h */
-import { FunctionalComponent, h } from "vue";
+import { FunctionalComponent } from "vue";
 
 interface HomeProps {
   contributors: string[];
@@ -8,11 +7,13 @@ interface HomeProps {
 const Home: FunctionalComponent<HomeProps> = ({ contributors }) => {
   return (
     <div>
-      <p class="text-4xl font-bold text-center mt-12">Contributors</p>
+      <p class="mt-12 text-center text-4xl font-bold">Contributors</p>
 
-      {contributors.map((c) => (
-        <p>{c}</p>
-      ))}
+      <div class="flex flex-col items-center">
+        {contributors.map((contributor) => (
+          <p>{contributor}</p>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 // * https://github.com/vuejs/vitepress/issues/529
 
+// @ts-ignore
 import markdownItKatex from "markdown-it-katex";
+
 import { defineConfig } from "vitepress";
 
 const customElements = [
