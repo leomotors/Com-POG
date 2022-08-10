@@ -1,10 +1,10 @@
-import { FunctionalComponent } from "vue";
+import { FunctionalComponent as FC } from "vue";
 
 interface HomeProps {
   contributors: string[];
 }
 
-const Home: FunctionalComponent<HomeProps> = ({ contributors }) => {
+const Home: FC<HomeProps> = ({ contributors }) => {
   return (
     <div>
       <p class="mt-12 text-center text-4xl font-bold">Contributors</p>

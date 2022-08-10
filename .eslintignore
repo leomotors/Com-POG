@@ -1,4 +1,0 @@
-!src/.vitepress/**/*
-*.config.js
-*.g.*
-scripts/**/*

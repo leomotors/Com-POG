@@ -8,5 +8,11 @@
   ],
   "rules": {
     "vue/multi-word-component-names": "off"
-  }
+  },
+  "ignorePatterns": [
+    "!src/.vitepress/**/*",
+    "*.config.js",
+    "*.g.*",
+    "scripts/**/*"
+  ]
 }

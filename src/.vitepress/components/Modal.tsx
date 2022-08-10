@@ -1,14 +1,11 @@
-import { FunctionalComponent } from "vue";
+import { FunctionalComponent as FC } from "vue";
 
 interface ModalProps {
   showModal: boolean;
   onClickOutside: () => void;
 }
 
-const Modal: FunctionalComponent<ModalProps> = (
-  { showModal, onClickOutside },
-  { slots }
-) => {
+const Modal: FC<ModalProps> = ({ showModal, onClickOutside }, { slots }) => {
   if (showModal) {
     return (
       <div

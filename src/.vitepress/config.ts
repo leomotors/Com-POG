@@ -1,13 +1,16 @@
 import { defineConfig } from "vitepress";
 import katexConfig from "./katex";
 
+import { solutions } from "./solutions";
+
 export default defineConfig({
   ...katexConfig,
 
-  title: "COM POG (Closed Preview)",
+  title: "COM POG (RFC Preview)",
   titleTemplate: "COM POG",
   description: "เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา",
   lastUpdated: true,
+  outDir: "../dist",
 
   head: [
     [
@@ -63,19 +66,8 @@ export default defineConfig({
       {
         collapsible: true,
         text: "Solutions",
-        items: [
-          {
-            text: "0001",
-            link: "/solutions/0001",
-          },
-          {
-            text: "0002",
-            link: "/solutions/0002",
-          },
-        ],
+        items: solutions,
       },
     ],
   },
-
-  outDir: "../dist",
 });

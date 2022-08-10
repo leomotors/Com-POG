@@ -23,7 +23,7 @@ function clickOutside() {
       <p class="text-center text-3xl font-bold">
         คุณแน่ใจหรือไม่ว่าต้องการดูเฉลย
       </p>
-      <p class="text-center">ของฝากนักกอล์ฟ</p>
+      <p class="text-center">ลองทำเองก่อนเถอะ</p>
 
       <div class="flex justify-evenly">
         <div

@@ -1,4 +1,4 @@
-import { Theme, useRouter } from "vitepress";
+import { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 
 import "./styles.css";
@@ -26,9 +26,6 @@ const config: Theme = {
     );
   },
   NotFound() {
-    const router = useRouter();
-    router.go("/404");
-
     return (
       <div class="flex flex-col items-center text-center">
         <p class="text-3xl font-bold sm:text-5xl">404 NOT FOUND</p>

@@ -1,5 +1,7 @@
 // @ts-check
 
+/// <reference lib="es2021" />
+
 /** @type {import("node:fs/promises")} */
 const fs = require("node:fs").promises;
 
@@ -13,7 +15,7 @@ async function main() {
   let enhance = "";
 
   components.forEach((c) => {
-    imports += `import ${c.name} from "$components/${c.full}";\n`;
+    imports += `// @ts-ignore\nimport ${c.name} from "$components/${c.full}";\n`;
     enhance += `app.component("${c.name}", ${c.name});\n`;
   });
 
@@ -23,13 +25,14 @@ async function main() {
   }));
 
   spoilers.forEach((s) => {
-    imports += `import S${s.name} from "$spoilers/${s.full}";\n`;
-    enhance += `app.component("S${s.name}", S${s.name});\n`;
+    const sname = "S" + s.name.replaceAll("_", "");
+    imports += `// @ts-ignore\nimport ${sname} from "$spoilers/${s.full}";\n`;
+    enhance += `app.component("${sname}", ${sname});\n`;
   });
 
   await fs.writeFile(
     "./src/.vitepress/theme/enhancer.g.ts",
-    `${imports} export default { enhanceApp: ({app}) => {${enhance}} }`
+    `${imports}\n// @ts-ignore\nexport default { enhanceApp: ({app}) => {${enhance}} }`
   );
 }
 
