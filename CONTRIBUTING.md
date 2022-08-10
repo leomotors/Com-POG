@@ -5,19 +5,19 @@
 ### Prerequisites
 
 - Visual Studio Code
-- node 16 (recommended)
-- yarn
+- node 16
+- pnpm 7
 
 Or if you don't need to preview your website, you can skip these steps
 
 ### Steps
 
 - Clone the repository (or fork)
-- Run `yarn install`
+- Run `pnpm install`
 - [Optional] Install recommended extension if you want to work with vue part
-- Run `yarn gen` to generate required things, if you made changes to src/.vitepress/{components,spoilers} by adding, deleting or renaming files, run this command again
+- Run `pnpm gen` to generate required things, if you made changes to src/.vitepress/{components,spoilers} by adding, deleting or renaming files, run this command again
 - Write your solution (Will be covered in next step)
-- To preview the website run `yarn dev`
+- To preview the website run `pnpm dev`
 
 ## Markdown
 

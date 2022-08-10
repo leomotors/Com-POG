@@ -105,11 +105,3 @@ dist
 
 # Generated Files
 *.g.*
-
-# Output
-docs-dist
-typedoc-out
-
-# yarn
-cache
-install-state.gz
