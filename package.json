@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev src --port=3182",
-    "build": "pnpm gen && vitepress build src && touch dist/.nojekyll",
+    "build": "pnpm gen && vitepress build src && touch dist/.nojekyll && cp robots.txt dist",
     "lint": "pnpm _format --check && eslint src/vite.config.ts \"src/.vitepress/**/*.{ts,tsx,vue}\"",
     "format": "pnpm _format --write",
     "_format": "prettier \"scripts/**/*.js\" \"src/**/*.{ts,md}\" \"src/**/*.{ts,tsx,vue,css,md}\"",
@@ -15,6 +15,7 @@
     "pnpm": "^7"
   },
   "devDependencies": {
+    "@leomotors/cocoa-vitepress-theme": "^1.0.2",
     "@types/node": "^18.6.5",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",

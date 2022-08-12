@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@leomotors/cocoa-vitepress-theme': ^1.0.2
   '@types/node': ^18.6.5
   '@vitejs/plugin-vue-jsx': ^2.0.0
   '@vue/eslint-config-prettier': ^7.0.0
@@ -20,6 +21,7 @@ specifiers:
   vue: ^3.2.37
 
 devDependencies:
+  '@leomotors/cocoa-vitepress-theme': 1.0.2
   '@types/node': 18.6.5
   '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.5+vue@3.2.37
   '@vue/eslint-config-prettier': 7.0.0_po3yoeeutu52wwqsoi2mwzccke
@@ -563,6 +565,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /@leomotors/cocoa-vitepress-theme/1.0.2:
+    resolution: {integrity: sha512-qE6F9w1JrA6x+Jc1Mj8Kf/SY2LQ/BDUWT1yqIGjHZ9AEQebblO46X/CRXYf2xjNB4RnsTPf/nZ/Pia7eRcOEgw==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
