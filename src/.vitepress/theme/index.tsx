@@ -2,6 +2,7 @@ import { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 
 import "@leomotors/cocoa-vitepress-theme/styles.css";
+import "./styles.css";
 import "katex/dist/katex.min.css";
 
 import Home from "$components/Home";
