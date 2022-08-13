@@ -50,6 +50,12 @@ To create a spoiler, do
 
 Where `SPOILERNAME` is `S` follows with the file name without `_`
 
+**RECAP**: Run `pnpm gen` everytime you made changes to `src/.vitepress/spoilers`
+
 For example, `00_Intro_01` becomes `S00Intro01`
 
 3. Add sidebar item in `src/.vitepress/solutions.ts`
+
+## Other contributions also welcomed!
+
+- Add learning material `/learning/material`, guide, fix typo, etc.

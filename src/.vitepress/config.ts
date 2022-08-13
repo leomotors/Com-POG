@@ -17,7 +17,7 @@ export default defineConfig({
       "link",
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai",
+        href: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:r,b",
       },
     ],
   ],
@@ -44,7 +44,7 @@ export default defineConfig({
         text: "Introduction",
         items: [
           {
-            text: "Intro",
+            text: "Welcome",
             link: "/introduction/",
           },
           {
@@ -58,8 +58,8 @@ export default defineConfig({
         text: "Learn",
         items: [
           {
-            text: "Overview",
-            link: "/learn/",
+            text: "Good Material",
+            link: "/learn/material",
           },
         ],
       },
