@@ -7,20 +7,21 @@
     "build": "pnpm gen && vitepress build src && touch dist/.nojekyll && cp robots.txt dist",
     "lint": "pnpm _format --check && eslint src/vite.config.ts \"src/.vitepress/**/*.{ts,tsx,vue}\"",
     "format": "pnpm _format --write",
-    "_format": "prettier \"scripts/**/*.js\" \"src/**/*.{ts,md}\" \"src/**/*.{ts,tsx,vue,css,md}\"",
-    "gen": "node scripts",
-    "deps": "ncu -u !katex"
+    "_format": "prettier \"scripts/**/*.ts\" \"src/**/*.{ts,md}\" \"src/**/*.{ts,tsx,vue,css,md}\"",
+    "gen": "bun scripts/index.ts"
   },
   "engines": {
     "pnpm": "^7"
   },
   "devDependencies": {
     "@leomotors/cocoa-vitepress-theme": "^1.0.2",
+    "@octokit/types": "^6.41.0",
     "@types/node": "^18.7.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "autoprefixer": "^10.4.8",
+    "bun-types": "^0.1.8",
     "clsx": "^1.2.1",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",

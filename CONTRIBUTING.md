@@ -14,6 +14,8 @@ Or if you don't need to preview your website, you can skip these steps
 
 - Clone the repository (or fork)
 - Run `pnpm install`
+- **IMPORTANT**: Run `pnpm gen`, normally this will be run in actions, so running
+  it locally without github token will generate mock files (for preview only).
 - Write your solution (Will be covered in next step)
 - To preview the website run `pnpm dev`
 

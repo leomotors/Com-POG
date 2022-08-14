@@ -2,11 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@leomotors/cocoa-vitepress-theme': ^1.0.2
+  '@octokit/types': ^6.41.0
   '@types/node': ^18.7.3
   '@vitejs/plugin-vue-jsx': ^2.0.0
   '@vue/eslint-config-prettier': ^7.0.0
   '@vue/eslint-config-typescript': ^11.0.0
   autoprefixer: ^10.4.8
+  bun-types: ^0.1.8
   clsx: ^1.2.1
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
@@ -23,11 +25,13 @@ specifiers:
 
 devDependencies:
   '@leomotors/cocoa-vitepress-theme': 1.0.2
+  '@octokit/types': 6.41.0
   '@types/node': 18.7.3
   '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.7+vue@3.2.37
   '@vue/eslint-config-prettier': 7.0.0_2xd4q2tc5cqa5as7uugqhp6oue
   '@vue/eslint-config-typescript': 11.0.0_4py5zxx5ck6utobkmozwvrmyiy
   autoprefixer: 10.4.8_postcss@8.4.16
+  bun-types: 0.1.8
   clsx: 1.2.1
   eslint: 8.22.0
   eslint-plugin-vue: 9.3.0_eslint@8.22.0
@@ -594,6 +598,16 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@octokit/openapi-types/12.11.0:
+    resolution: {integrity: sha512-VsXyi8peyRq9PqIz/tpqiL2w3w80OgVMwBHltTml3LmVvXiphgeqmY9mvBw9Wu7e0QWk/fqD37ux8yP5uVekyQ==}
+    dev: true
+
+  /@octokit/types/6.41.0:
+    resolution: {integrity: sha512-eJ2jbzjdijiL3B4PrSQaSjuF2sPEQPVCPzBvTHJD9Nz+9dw2SGH4K4xeQJ77YfTq5bRQ+bD8wT11JbeDPmxmGg==}
+    dependencies:
+      '@octokit/openapi-types': 12.11.0
+    dev: true
+
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
@@ -1095,6 +1109,10 @@ packages:
       electron-to-chromium: 1.4.219
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.3
+    dev: true
+
+  /bun-types/0.1.8:
+    resolution: {integrity: sha512-gIcflj8Urhq38QsIeZBeFsJyrJ0k2MUsxYJ4nNW2mkPLmvfvT+wyqdvXRpZVVEFtFZeGYXmihZW3AymWEXdbEA==}
     dev: true
 
   /callsites/3.1.0:

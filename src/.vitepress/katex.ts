@@ -1,6 +1,6 @@
 // * https://github.com/vuejs/vitepress/issues/529
 
-// @ts-ignore
+// @ts-expect-error this library suck and has THICC vulnerability
 import markdownItKatex from "markdown-it-katex";
 
 import { defineConfig } from "vitepress";

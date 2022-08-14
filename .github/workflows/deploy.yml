@@ -26,6 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - uses: xhyrom/setup-bun@v0.1.7
+        with:
+          bun-version: latest
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
@@ -53,7 +58,7 @@ jobs:
         run: pnpm install
 
       - name: Build the Web
-        run: pnpm build
+        run: GH_PAT=${{ secrets.GITHUB_TOKEN }} pnpm build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

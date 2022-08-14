@@ -6,8 +6,8 @@ import "./styles.css";
 import "katex/dist/katex.min.css";
 
 import Home from "$components/Home";
-
 import { enhancer } from "./enhancer";
+import Contributors from "./contributor.g.json";
 
 const config: Theme = {
   ...DefaultTheme,
@@ -17,11 +17,7 @@ const config: Theme = {
       // @ts-expect-error type conflict mumbo jumbo but it works
       <DefaultTheme.Layout>
         {{
-          "home-features-after": () => (
-            <Home
-              contributors={["contributor1", "contributor2", "contributor3"]}
-            />
-          ),
+          "home-features-after": () => <Home contributors={Contributors} />,
         }}
       </DefaultTheme.Layout>
     );
