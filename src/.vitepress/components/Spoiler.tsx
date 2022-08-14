@@ -22,7 +22,7 @@ const Spoiler = defineComponent({
 
     onMounted(() => {
       const element = document.getElementById(elementId) as HTMLDivElement;
-      const next = element.nextElementSibling;
+      const next = element?.nextElementSibling;
 
       next?.classList.add("blur-sm");
       next?.children[0]?.classList.add("pointer-events-none");
@@ -34,7 +34,7 @@ const Spoiler = defineComponent({
       showModal.value = false;
 
       const element = document.getElementById(elementId) as HTMLDivElement;
-      const next = element.nextElementSibling;
+      const next = element?.nextElementSibling;
 
       next?.classList.remove("blur-sm");
       next?.children[0]?.classList.remove("pointer-events-none");
