@@ -6,6 +6,10 @@
 
 ## Full Solution
 
-<Spoiler>
-  <S00Intro01 />
-</Spoiler>
+<Spoiler />
+
+```py
+print("Hello Python.")
+print("We're using Python 3.")
+```
+

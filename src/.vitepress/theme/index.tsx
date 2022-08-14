@@ -7,11 +7,11 @@ import "katex/dist/katex.min.css";
 
 import Home from "$components/Home";
 
-import Enhancer from "./enhancer.g";
+import { enhancer } from "./enhancer";
 
 const config: Theme = {
   ...DefaultTheme,
-  ...Enhancer,
+  enhanceApp: enhancer,
   Layout() {
     return (
       // @ts-expect-error type conflict mumbo jumbo but it works

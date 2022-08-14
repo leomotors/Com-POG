@@ -1,5 +1,4 @@
-import { defineComponent, ref } from "vue";
-
+import { defineComponent, ref, onMounted } from "vue";
 import clsx from "clsx";
 
 import Modal from "$components/Modal";
@@ -8,27 +7,43 @@ const btnClsx =
   "cursor-pointer rounded-xl transition-colors py-2 px-4 text-lg font-bold text-white";
 
 const Spoiler = defineComponent({
-  setup(props, { slots }) {
-    const showModal = ref<0 | 1 | 2>(0);
+  setup() {
+    const showModal = ref(false);
 
     function clickOutside() {
-      showModal.value = 0;
+      showModal.value = false;
+    }
+
+    const elementId = "spoiler-" + Math.random();
+
+    const onShowSpoiler = () => {
+      showModal.value = true;
+    };
+
+    onMounted(() => {
+      const element = document.getElementById(elementId) as HTMLDivElement;
+      const next = element.nextElementSibling;
+
+      next?.classList.add("blur-sm");
+      next?.children[0]?.classList.add("pointer-events-none");
+
+      next?.addEventListener("click", onShowSpoiler);
+    });
+
+    function showSpoiler() {
+      showModal.value = false;
+
+      const element = document.getElementById(elementId) as HTMLDivElement;
+      const next = element.nextElementSibling;
+
+      next?.classList.remove("blur-sm");
+      next?.children[0]?.classList.remove("pointer-events-none");
+      next?.removeEventListener("click", onShowSpoiler);
     }
 
     return () => (
       <>
-        <div
-          class={clsx("w-fit cursor-pointer", showModal.value < 2 && "blur-sm")}
-          onClick={
-            showModal.value < 2 ? () => (showModal.value = 1) : undefined
-          }
-        >
-          <div class={showModal.value < 2 && "pointer-events-none"}>
-            {slots.default?.()}
-          </div>
-        </div>
-
-        <Modal showModal={showModal.value == 1} onClickOutside={clickOutside}>
+        <Modal showModal={showModal.value} onClickOutside={clickOutside}>
           <div class="mx-auto h-full w-[50vw] p-4">
             <p class="text-center text-3xl font-bold">
               คุณแน่ใจหรือไม่ว่าต้องการดูเฉลย
@@ -43,7 +58,7 @@ const Spoiler = defineComponent({
                 ยกเลิก
               </button>
               <button
-                onClick={() => (showModal.value = 2)}
+                onClick={showSpoiler}
                 class={clsx(btnClsx, "bg-pink-900 hover:bg-pink-700")}
               >
                 ยืนยัน
@@ -51,6 +66,9 @@ const Spoiler = defineComponent({
             </div>
           </div>
         </Modal>
+
+        {/* For referencing */}
+        <div id={elementId} />
       </>
     );
   },
