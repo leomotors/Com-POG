@@ -21,6 +21,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "autoprefixer": "^10.4.8",
+    "clsx": "^1.2.1",
     "eslint": "^8.21.0",
     "eslint-plugin-vue": "^9.3.0",
     "katex": "^0.6.0",

@@ -2,6 +2,9 @@
 
 /** @type {import("tailwindcss").Config} */
 const config = {
+  corePlugins: {
+    preflight: false,
+  },
   content: ["./src/.vitepress/**/*.{js,ts,tsx,vue,css}"],
   darkMode: "class",
   theme: {

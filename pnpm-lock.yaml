@@ -7,6 +7,7 @@ specifiers:
   '@vue/eslint-config-prettier': ^7.0.0
   '@vue/eslint-config-typescript': ^11.0.0
   autoprefixer: ^10.4.8
+  clsx: ^1.2.1
   eslint: ^8.21.0
   eslint-plugin-vue: ^9.3.0
   katex: ^0.6.0
@@ -27,6 +28,7 @@ devDependencies:
   '@vue/eslint-config-prettier': 7.0.0_po3yoeeutu52wwqsoi2mwzccke
   '@vue/eslint-config-typescript': 11.0.0_nc7nknup3hbyc67gcp5ycg4lby
   autoprefixer: 10.4.8_postcss@8.4.16
+  clsx: 1.2.1
   eslint: 8.21.0
   eslint-plugin-vue: 9.3.0_eslint@8.21.0
   katex: 0.6.0
@@ -1144,6 +1146,11 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: true
 
   /color-convert/1.9.3:
