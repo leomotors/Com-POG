@@ -13,9 +13,9 @@ function clickOutside() {
 <template>
   <div
     @click="showModal = 1"
-    class="w-fit cursor-pointer rounded-xl border-2 border-red-500 bg-pink-900 p-2 transition-all hover:border-red-400"
+    class="w-fit cursor-pointer blur-md"
   >
-    กดเพื่อดูเฉลย
+    <slot />
   </div>
 
   <Modal :showModal="showModal == 1" :onClickOutside="clickOutside">
@@ -28,7 +28,7 @@ function clickOutside() {
       <div class="flex justify-evenly">
         <div
           @click="clickOutside"
-          class="w-fit cursor-pointer rounded-xl border border-black bg-slate-900 p-2 text-white"
+          class="w-fit cursor-pointer border border-black bg-slate-900 p-2 text-white"
         >
           ยกเลิก
         </div>
