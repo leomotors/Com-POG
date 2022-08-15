@@ -26,11 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - uses: xhyrom/setup-bun@v0.1.7
-        with:
-          bun-version: latest
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
