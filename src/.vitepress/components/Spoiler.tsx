@@ -24,7 +24,7 @@ const Spoiler = defineComponent({
       const element = document.getElementById(elementId) as HTMLDivElement;
       const next = element?.nextElementSibling;
 
-      next?.classList.add("blur-sm");
+      next?.classList.add("blur-sm", "select-none");
       next?.children[0]?.classList.add("pointer-events-none");
 
       next?.addEventListener("click", onShowSpoiler);
@@ -36,7 +36,7 @@ const Spoiler = defineComponent({
       const element = document.getElementById(elementId) as HTMLDivElement;
       const next = element?.nextElementSibling;
 
-      next?.classList.remove("blur-sm");
+      next?.classList.remove("blur-sm", "select-none");
       next?.children[0]?.classList.remove("pointer-events-none");
       next?.removeEventListener("click", onShowSpoiler);
     }
