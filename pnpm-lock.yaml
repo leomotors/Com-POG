@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@leomotors/cocoa-vitepress-theme': ^1.0.2
-  '@octokit/types': ^7.0.0
-  '@types/node': ^18.7.5
+  '@octokit/types': ^7.1.0
+  '@types/node': ^18.7.6
   '@vitejs/plugin-vue-jsx': ^2.0.0
   '@vue/eslint-config-prettier': ^7.0.0
   '@vue/eslint-config-typescript': ^11.0.0
@@ -21,13 +21,13 @@ specifiers:
   typescript: ^4.7.4
   undici: ^5.8.2
   vite: ^3.0.8
-  vitepress: 1.0.0-alpha.5
+  vitepress: 1.0.0-alpha.4
   vue: ^3.2.37
 
 devDependencies:
   '@leomotors/cocoa-vitepress-theme': 1.0.2
-  '@octokit/types': 7.0.0
-  '@types/node': 18.7.5
+  '@octokit/types': 7.1.0
+  '@types/node': 18.7.6
   '@vitejs/plugin-vue-jsx': 2.0.0_vite@3.0.8+vue@3.2.37
   '@vue/eslint-config-prettier': 7.0.0_2xd4q2tc5cqa5as7uugqhp6oue
   '@vue/eslint-config-typescript': 11.0.0_4py5zxx5ck6utobkmozwvrmyiy
@@ -45,7 +45,7 @@ devDependencies:
   typescript: 4.7.4
   undici: 5.8.2
   vite: 3.0.8
-  vitepress: 1.0.0-alpha.5
+  vitepress: 1.0.0-alpha.4
   vue: 3.2.37
 
 packages:
@@ -628,22 +628,22 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@octokit/openapi-types/13.0.1:
-    resolution: {integrity: sha512-40U39YoFBhJhmkAg6gbJnh9U8aueJwCuiTW0mXY2pNl9/+E7dUxXiMPOrIUGT12XqLinroaXYA3FUiw3BMeNfg==}
+  /@octokit/openapi-types/13.1.0:
+    resolution: {integrity: sha512-Z7vzLqfTkoVQyoy/2iQla1N2I4Vav2wi4JbZK8QxIYAfBimhuflosFxmsqw5LTH7DkdNW46ZYpAcqJf0XaS8SQ==}
     dev: true
 
-  /@octokit/types/7.0.0:
-    resolution: {integrity: sha512-8uSDc66p6+wADn6lh6lA7I3ZTIapn7F/dfpsiDztVjEr6kkyKR3qPqa4lgEX92O/8iJoDeGcscKRXGAjCSR/zg==}
+  /@octokit/types/7.1.0:
+    resolution: {integrity: sha512-+ClA0jRc9zGFj5mfQeQNfgTlelzhpAexbAueQG1t2Xn8yhgnsjkF8bgLcUUpwrpqkv296uXyiGwkqXRSU7KYzQ==}
     dependencies:
-      '@octokit/openapi-types': 13.0.1
+      '@octokit/openapi-types': 13.1.0
     dev: true
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
-  /@types/node/18.7.5:
-    resolution: {integrity: sha512-NcKK6Ts+9LqdHJaW6HQmgr7dT/i3GOHG+pt6BiWv++5SnjtRd4NXeiuN2kA153SjhXPR/AhHIPHPbrsbpUVOww==}
+  /@types/node/18.7.6:
+    resolution: {integrity: sha512-EdxgKRXgYsNITy5mjjXjVE/CS8YENSdhiagGrLqjG0pvA2owgJ6i4l7wy/PFZGC0B1/H20lWKN7ONVDNYDZm7A==}
     dev: true
 
   /@types/web-bluetooth/0.0.14:
@@ -2613,8 +2613,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.5:
-    resolution: {integrity: sha512-bhUfmTzd+i5fm2rInBR1Q/1RBhT0xTXM+vPqVWJdHmIc8XnWF/O7lT6kai38rOTNTt/KyPDk2SRRourPVhQJMA==}
+  /vitepress/1.0.0-alpha.4:
+    resolution: {integrity: sha512-bOAA4KW6vYGlkbcrPLZLTKWTgXVroObU+o9xj9EENyEl6yg26WWvfN7DGA4BftjdM5O8nR93Z5khPQ3W/tFE7Q==}
     engines: {node: '>=14.6.0'}
     hasBin: true
     dependencies:
