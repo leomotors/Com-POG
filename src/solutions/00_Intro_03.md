@@ -2,7 +2,33 @@
 
 ความยาก: ★
 
-*ทำไมไม่ทำเองล่ะ ล อ ก ท ำ ไ ม ค รั บ*
+## ข้อควรระวัง
+
+ในการพิมพ์ข้อความที่มีตัวอักษร `\` เราจำเป็นที่จะต้อง "escape" มัน
+โดยหากต้องการพิมพ์ `\` จะต้องใช้คำสั่ง
+
+```py
+print("\\") # will outputs single \
+```
+
+สาเหตุที่เป็นเช่นนั้น เนื่องจาก `\` เป็นตัวอักษรพิเศษ ยกตัวอย่างเช่น `\n` ใน `print("hello\nworld")` แทน new line / line feed, `\r` แทน carriage return
+
+อีกวิธีที่จะพิมพ์ `\` ได้คือการใช้ raw string ดังตัวอย่าง
+
+```py
+print(r"this string \/ will be print as it is")
+```
+
+## Multiline String
+
+เราสามารถใช้ `"""` หรือ `'''` เพื่อเปิดปิด Multiline String ได้ เช่น
+
+```py
+print("""
+Hello
+World
+""")
+```
 
 ## Full Solution
 

@@ -2,11 +2,7 @@ import type { DefaultTheme } from "vitepress";
 
 export const solutions: DefaultTheme.SidebarItem[] = [
   {
-    text: "0001 - TEST 1",
-    link: "/solutions/0001",
-  },
-  {
-    text: "0002 - TEST 2",
+    text: "EXAMPLE",
     link: "/solutions/0002",
   },
   {

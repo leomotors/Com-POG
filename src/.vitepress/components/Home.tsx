@@ -13,7 +13,6 @@ const Home: FC<HomeProps> = ({ contributors }) => {
         🙏Contributors🙇
       </p>
 
-      {/* @ts-expect-error */}
       <VPTeamMembers
         size="small"
         members={contributors.map((contributor) => ({
