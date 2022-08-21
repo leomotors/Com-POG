@@ -6,6 +6,7 @@ import { solutions } from "./solutions";
 export default defineConfig({
   ...katexConfig,
 
+  lang: "th",
   title: "COM POG (RFC Preview)",
   titleTemplate: "COM POG",
   description: "เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา",
