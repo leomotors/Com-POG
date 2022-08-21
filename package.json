@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@leomotors/cocoa-vitepress-theme": "^1.0.2",
-    "@octokit/types": "^7.1.0",
-    "@types/node": "^18.7.6",
+    "@octokit/types": "^7.1.1",
+    "@types/node": "^18.7.8",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
@@ -34,7 +34,7 @@
     "typescript": "^4.7.4",
     "undici": "^5.9.1",
     "vite": "^3.0.9",
-    "vitepress": "1.0.0-alpha.8",
+    "vitepress": "1.0.0-alpha.9",
     "vue": "^3.2.37"
   }
 }
