@@ -1,4 +1,4 @@
-import { FunctionalComponent as FC } from "vue";
+import type { FunctionalComponent as FC } from "vue";
 
 interface ModalProps {
   showModal: boolean;

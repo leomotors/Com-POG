@@ -1,4 +1,4 @@
-import { FunctionalComponent as FC } from "vue";
+import type { FunctionalComponent as FC } from "vue";
 
 import { VPTeamMembers } from "vitepress/theme";
 
@@ -13,6 +13,7 @@ const Home: FC<HomeProps> = ({ contributors }) => {
         🙏Contributors🙇
       </p>
 
+      {/* @ts-ignore too mumbo jumbo here */}
       <VPTeamMembers
         size="small"
         members={contributors.map((contributor) => ({

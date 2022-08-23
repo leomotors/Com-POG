@@ -1,13 +1,13 @@
 import { defineConfig } from "vitepress";
-import katexConfig from "./katex";
 
+import katexConfig from "./katex";
 import { solutions } from "./solutions";
 
 export default defineConfig({
   ...katexConfig,
 
   lang: "th",
-  title: "COM POG (RFC Preview)",
+  title: "COM POG (Preview)",
   titleTemplate: "COM POG",
   description: "เว็บไซต์รวมเฉลยโจทย์ในเกรดเดอร์วิชา COM PROG วิศวะจุฬา",
   lastUpdated: true,

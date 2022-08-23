@@ -1,5 +1,6 @@
 import type { DefaultTheme } from "vitepress";
 
+// * Add links to sidebar here, please sort them alphabetically
 export const solutions: DefaultTheme.SidebarItem[] = [
   {
     text: "EXAMPLE",
@@ -12,6 +13,10 @@ export const solutions: DefaultTheme.SidebarItem[] = [
   {
     text: "00_Intro_03 - ★ Mountain Valley",
     link: "/solutions/00_Intro_03",
+  },
+  {
+    text: "02_StrList_F06 - ★★ AddVector (Function)",
+    link: "/solutions/02_StrList_F06",
   },
   {
     text: "05_List_11 - ★ Missing Digits",

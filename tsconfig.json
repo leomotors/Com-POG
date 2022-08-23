@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
+    "importsNotUsedAsValues": "error",
     "paths": {
       "$components/*": ["./src/.vitepress/components/*"],
       "$spoilers/*": ["./src/.vitepress/spoilers/*"]
