@@ -10,7 +10,7 @@
 
 ### Steps
 
-- Fork andclone the repository
+- Fork and clone the repository
 - Run `pnpm install`
 - **IMPORTANT** Run `pnpm gen`, normally this will be run in actions, so running
   it locally without github token will generate mock files (for preview only).
@@ -23,7 +23,7 @@
 
 Vitepress have special syntax on top of normal markdown magics.
 
-See here https://vitepress.vuejs.org/guide/markdown.html
+See in [vitepress docs](https://vitepress.vuejs.org/guide/markdown.html)
 
 ### LaTeX with KaTeX
 
