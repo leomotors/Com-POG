@@ -12,8 +12,8 @@
 
 - Fork and clone the repository
 - Run `pnpm install`
-- **IMPORTANT** Run `pnpm gen`, normally this will be run in actions, so running
-  it locally without github token will generate mock files (for preview only).
+- Run `pnpm gen`, this will generate mocked data, do `PROD=1 pnpm gen` to fetch
+  real data from GitHub API
 - Write your solution (Will be covered in next step)
 - To preview the website run `pnpm dev`
 - Run `pnpm format` to format something you miss

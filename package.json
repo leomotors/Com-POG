@@ -11,6 +11,7 @@
     "gen": "tsx scripts/index.ts"
   },
   "engines": {
+    "node": "16",
     "pnpm": "^7"
   },
   "devDependencies": {

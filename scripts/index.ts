@@ -3,13 +3,9 @@ import type { Endpoints } from "@octokit/types";
 import fs from "node:fs/promises";
 import { fetch } from "undici";
 
-const headers = {
-  Authorization: `token ${process.env.GH_PAT}`,
-};
-
 async function main() {
-  if (!process.env.GH_PAT) {
-    console.log("No GitHub Token Found, generating mock files for DEV only");
+  if (!process.env.PROD) {
+    console.log("Using Mocked Data");
 
     await fs.writeFile(
       "src/.vitepress/theme/contributor.g.json",
@@ -20,8 +16,7 @@ async function main() {
   }
 
   const contributors = (await fetch(
-    "https://api.github.com/repos/Leomotors/Com-POG/contributors",
-    { headers }
+    "https://api.github.com/repos/Leomotors/Com-POG/contributors"
   ).then((r) =>
     r.json()
   )) as Endpoints["GET /repos/{owner}/{repo}/contributors"]["response"]["data"];
@@ -29,8 +24,7 @@ async function main() {
   await Promise.all(
     contributors.map(async (contributor) => {
       const full_user = (await fetch(
-        `https://api.github.com/users/${contributor.login}`,
-        { headers }
+        `https://api.github.com/users/${contributor.login}`
       ).then((r) => r.json())) as Endpoints["GET /user"]["response"]["data"];
 
       contributor.name = full_user.name ?? undefined;
