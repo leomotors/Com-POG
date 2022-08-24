@@ -45,7 +45,7 @@ const Spoiler = defineComponent({
     return () => (
       <>
         <Modal showModal={showModal.value} onClickOutside={clickOutside}>
-          <div class="mx-auto h-full w-[50vw] p-4">
+          <div class="mx-auto h-full w-[95vw] p-4 md:w-[66vw] lg:w-[50vw]">
             <p class="text-center text-3xl font-bold">
               คุณแน่ใจหรือไม่ว่าต้องการดูเฉลย
             </p>

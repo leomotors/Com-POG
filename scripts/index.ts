@@ -9,7 +9,7 @@ async function main() {
 
     await fs.writeFile(
       "src/.vitepress/theme/contributor.g.json",
-      '[{"name":"Nutthapat Pongtanyavichai","login":"Leomotors","avatarUrl":"https://avatars.githubusercontent.com/u/59821765?v=4"},{"name":"Poonpipob \\"Leon\\" Kunlayanathee","login":"shalluv","avatarUrl":"https://avatars.githubusercontent.com/u/42491719?v=4"}]'
+      '[{"name":"Nutthapat Pongtanyavichai","login":"Leomotors","avatarUrl":"https://avatars.githubusercontent.com/u/59821765?v=4"},{"name":"Chotpisit Adunsehawat","login":"Nacnano","avatarUrl":"https://avatars.githubusercontent.com/u/59221274?v=4"},{"name":"Poonpipob \\"Leon\\" Kunlayanathee","login":"shalluv","avatarUrl":"https://avatars.githubusercontent.com/u/42491719?v=4"}]'
     );
 
     process.exit(0);
